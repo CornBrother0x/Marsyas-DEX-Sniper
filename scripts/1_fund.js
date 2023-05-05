@@ -1,7 +1,7 @@
 const IERC20 = require('@openzeppelin/contracts/build/contracts/ERC20.json')
-const WETH = new web3.eth.Contract(IERC20.abi, '0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2')
+const WETH = new web3.eth.Contract(IERC20.abi, '')
 
-const UNLOCKED_ACCOUNT = '0x2fEb1512183545f48f6b9C5b4EbfCaF49CfCa6F3'
+const UNLOCKED_ACCOUNT = ''
 
 module.exports = async function (callback) {
     const [deployer, sniper] = await web3.eth.getAccounts()
